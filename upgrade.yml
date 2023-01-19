@@ -8,7 +8,7 @@
     eap_offline_install: True
     eap_apply_cp: True
     eap_version: "7.4.0"
-    eap_patch_version: "7.4.8"
+    eap_patch_version: "7.4.9"
   roles:
     - role: eap_install
     - role: eap_systemd

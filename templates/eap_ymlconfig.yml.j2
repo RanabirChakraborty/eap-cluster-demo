@@ -1,15 +1,22 @@
 wildfly-configuration:
   system-property:
     JBOSS_ID:
-      value: {{ inventory_hostname }}        
+      value: {{ inventory_hostname }}
+  socket-binding-group:
+    standard-sockets:
+      remote-destination-outbound-socket-binding:
+        jgroups-wildfly-cluster-demo-1:
+          host: wildfly-cluster-demo-1
+          port: 7600 
+      remote-destination-outbound-socket-binding:
+        jgroups-wildfly-cluster-demo-2:
+          host: wildfly-cluster-demo-2
+          port: 7600 
+      remote-destination-outbound-socket-binding:
+        jgroups-wildfly-cluster-demo-3:
+          host: wildfly-cluster-demo-3
+          port: 7600            
   subsystem:
-    modcluster:
-      proxy:
-        default:
-          proxies:
-            - wildfly-cluster-demo-1
-          advertise: false
-          listener: ajp
     jgroups:
       stack:
         tcpping:
