@@ -1,4 +1,4 @@
 [eap]
-wildfly-cluster-demo-1 ansible_host=10.0.150.94 ansible_user=root ansible_ssh_private_key_file="/home/hcheruku/.ssh/id_rsa"
-wildfly-cluster-demo-2 ansible_host=10.0.149.92 ansible_user=root ansible_ssh_private_key_file="/home/hcheruku/.ssh/id_rsa"
-wildfly-cluster-demo-3 ansible_host=10.0.148.125 ansible_user=root ansible_ssh_private_key_file="/home/hcheruku/.ssh/id_rsa"
+wildfly-cluster-demo-1 ansible_host="" ansible_user=root ansible_ssh_private_key_file=""
+wildfly-cluster-demo-2 ansible_host="" ansible_user=root ansible_ssh_private_key_file=""
+wildfly-cluster-demo-3 ansible_host="" ansible_user=root ansible_ssh_private_key_file=""

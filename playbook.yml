@@ -9,11 +9,6 @@
     - eap_driver
     - eap_systemd
   vars:
-    # eap_home: "/opt/jboss_eap/jboss-eap-7.4/"
-    # eap_user: eap
-    # eap_group: eap
-    # eap_basedir_prefix: "/opt/jboss_eap"
-    # eap_port_range_offset: 100
     service_systemd_env_file: "/etc/eap.conf"
     service_systemd_conf_file: "/usr/lib/systemd/system/eap.service"
     eap_config_base: standalone-ha.xml
