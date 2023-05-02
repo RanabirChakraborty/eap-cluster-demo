@@ -8,11 +8,9 @@ wildfly-configuration:
         jgroups-wildfly-cluster-demo-1:
           host: wildfly-cluster-demo-1
           port: 7600 
-      remote-destination-outbound-socket-binding:
         jgroups-wildfly-cluster-demo-2:
           host: wildfly-cluster-demo-2
           port: 7600 
-      remote-destination-outbound-socket-binding:
         jgroups-wildfly-cluster-demo-3:
           host: wildfly-cluster-demo-3
           port: 7600            
@@ -21,8 +19,8 @@ wildfly-configuration:
       stack:
         tcpping:
           transport:
-            TCP:
-              socket-binding: jgroups-tcp
+            type: TCP
+            socket-binding: jgroups-tcp
           protocol:
             TCPPING:
               socket-bindings:
