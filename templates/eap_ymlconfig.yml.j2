@@ -7,13 +7,15 @@ wildfly-configuration:
       remote-destination-outbound-socket-binding:
         jgroups-wildfly-cluster-demo-1:
           host: wildfly-cluster-demo-1
-          port: 7600 
+          port: 7600
+      remote-destination-outbound-socket-binding:          
         jgroups-wildfly-cluster-demo-2:
           host: wildfly-cluster-demo-2
           port: 7600 
+      remote-destination-outbound-socket-binding:
         jgroups-wildfly-cluster-demo-3:
           host: wildfly-cluster-demo-3
-          port: 7600            
+          port: 7600
   subsystem:
     jgroups:
       stack:
